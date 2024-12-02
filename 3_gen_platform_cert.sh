@@ -2,7 +2,7 @@
 set -exo pipefail
 
 # Generate CSR
-openssl req -new -provider tpm2 -key handle:0x81000001 -subj "/CN=IBM Platform/O=IBM/C=US"  -out platform.csr
+openssl req -new -provider tpm2 -key handle:0x81000000 -subj "/CN=IBM Platform/O=IBM/C=US"  -out platform.csr
 
 # Generate CA signed client cert
 rm -rf ca 2> /dev/null

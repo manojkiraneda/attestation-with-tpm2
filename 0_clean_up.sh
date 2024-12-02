@@ -5,4 +5,4 @@
 # -o pipefail: prevents errors in a pipeline from being masked
 set -exo pipefail
 
-rm -rf *.key *.crt *.der *.pem *.msg *.sig *.pcrs ca local-ca.* *.ctx rsakey.* *.csr 2> /dev/null
+rm -rf *.key *.crt *.der *.priv *.pub *.pem *.msg *.sig *.pcrs ca local-ca.* *.ctx rsakey.* *.csr 2> /dev/null

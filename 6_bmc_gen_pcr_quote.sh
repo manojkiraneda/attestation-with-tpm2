@@ -6,4 +6,4 @@
 set -exo pipefail
 
 # Generate the signed quote
-tpm2 quote -c platform.ctx -l sha256:0,1,8,9 -q abc123 -m quote.msg -s quote.sig -o quote.pcrs -g sha256
+tpm2 quote -c 0x81000000 -l sha256:0,1,8,9 -q abc123 -m quote.msg -s quote.sig -o quote.pcrs -g sha256
